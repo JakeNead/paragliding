@@ -2,7 +2,7 @@ import {homePage} from "./home.js";
 
 homePage()
 
-
+console.log('test')
 
 
 // document.querySelector('.homeLink').addEventListener('click', () => {
