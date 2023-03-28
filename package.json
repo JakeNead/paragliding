@@ -1,5 +1,5 @@
 {
-  "name": "restaurant",
+  "name": "paragliding",
   "version": "1.0.0",
   "description": "",
   "private": "true",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JakeNead/restaurant.git"
+    "url": "git+https://github.com/JakeNead/paragliding.git"
   },
   "author": "Jake Nead",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JakeNead/restaurant/issues"
+    "url": "https://github.com/JakeNead/paragliding/issues"
   },
-  "homepage": "https://github.com/JakeNead/restaurant#readme",
+  "homepage": "https://github.com/JakeNead/paragliding#readme",
   "devDependencies": {
     "webpack": "^5.76.3",
     "webpack-cli": "^5.0.1"
