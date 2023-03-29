@@ -1,9 +1,0 @@
-header {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: green;
-}
-
-.nav-links {
-  display: flex;
-}
