@@ -1,8 +1,8 @@
 import {homePage} from "./home.js";
+import './style.css'
+import background from './assets/background.jpg'
 
 homePage()
-
-console.log('test')
 
 
 // document.querySelector('.homeLink').addEventListener('click', () => {
@@ -31,4 +31,4 @@ console.log('test')
 
 
 
-// paragliding site with home/adventures/contact us
+// paragliding site with home/adventures/contact us 

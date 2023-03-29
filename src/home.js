@@ -2,7 +2,7 @@ export { homePage }
 
 
 function homePage () {
-    const content = document.getElementById('\content')
+    const content = document.getElementById('content')
     const header = document.createElement('header')
     header.classList.add('header')
     content.append(header)
@@ -26,7 +26,7 @@ function homePage () {
         navLinks.append(homeLink, menuLink, contactLink)
 
     const h1 = document.createElement('h1')
-    h1. textContent = 'Restaurant Name'
+    h1. textContent = 'Paragliding'
     header.append(h1)
 
     const headerInfo = document.createElement('div')
@@ -40,6 +40,9 @@ function homePage () {
     address.classList.add('headerAddress')
     address.textContent = "987 65th St. Sitka, AK"
     headerInfo.append(phone, address)
+
+    const main = document.createElement('main')
+    content.append(main)
 }
 
 
