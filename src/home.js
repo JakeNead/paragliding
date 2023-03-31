@@ -1,5 +1,22 @@
 export { homePage }
 
+const pageContent = [{tag: 'header', content: '', parent: 'content'},
+{tag: 'div', classAttr: 'navLinks', content: '', parent: 'header'},
+{tag: 'div', classAttr: 'homeLink', content: 'Home', parent: 'navLinks'},
+{tag: 'div', classAttr: 'adventuresLink', content: 'Adventures', parent: 'navLinks'},
+{tag: 'div', classAttr: 'contactLink', content: 'Contact Us', parent: 'navLinks'},
+{tag: 'h1', classAttr: 'h1', content: 'Paraglide AK', parent: 'header'},
+]
+
+// {tag: , classAttr: , content: , parent: },
+
+function elementBuilder({tag, classAttr, content, parent}) {
+    const elem = document.createElement(tag);
+    elem.classlist.add(classAttr);
+    elem.textContent = content
+    const parentEl = document.querySelector(`.${parent}`)
+    parentEl.append(elem)
+  }
 
 function homePage () {
     const content = document.getElementById('content')
@@ -38,7 +55,7 @@ function homePage () {
     phone.textContent = '555-123-4567'
     const address = document.createElement('p')
     address.classList.add('headerAddress')
-    address.textContent = "987 65th St. Sitka, AK"
+    address.textContent = "123 45th St. Anchorage, AK"
     headerInfo.append(phone, address)
 
     const main = document.createElement('main')
