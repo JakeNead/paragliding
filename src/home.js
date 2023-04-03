@@ -2,72 +2,36 @@ export { homePage }
 
 function homePage () {
 const pageContent = [
-{tag: 'header', classAttr: 'header', content: '', parent: 'content'},
-{tag: 'div', classAttr: 'navLinks', content: '', parent: 'header'},
-{tag: 'div', classAttr: 'homeLink', content: 'Home', parent: 'navLinks'},
-{tag: 'div', classAttr: 'adventuresLink', content: 'Adventures', parent: 'navLinks'},
-{tag: 'div', classAttr: 'contactLink', content: 'Contact Us', parent: 'navLinks'},
-{tag: 'h1', classAttr: 'h1', content: 'Paraglide AK', parent: 'header'},
+{tag: 'header', attr: 'header', content: '', parent: 'content'},
+{tag: 'div', attr: 'navLinks', content: '', parent: 'header'},
+{tag: 'div', attr: 'homeLink', content: 'Home', parent: 'navLinks'},
+{tag: 'div', attr: 'adventuresLink', content: 'Adventures', parent: 'navLinks'},
+{tag: 'div', attr: 'contactLink', content: 'Contact Us', parent: 'navLinks'},
+{tag: 'h1', attr: 'h1', content: 'Paraglide AK', parent: 'header'},
+{tag: 'div', attr: 'headerInfo', content: '', parent: 'header' },
+{tag: 'p', attr: 'headerPhone', content: '555-123-4567', parent:'headerInfo' },
+{tag: 'p', attr: 'headerAddress', content: '123 45th St. Anchorage, AK', parent:'headerInfo' },
+{tag: 'main', attr: 'main', content: '', parent: 'content'},
+{tag: 'h2', attr: 'cta', content: 'Come see Fairbanks from a whole new perspective!', parent: 'main'},
+{tag: 'button', attr: 'contactButton', content: 'Book a flight!', parent: 'main'},
+
 ]
-// {tag: , classAttr: , content: , parent: },
+// {tag: , attr: , content: , parent: },
 
 
-function elementBuilder({tag, classAttr, content, parent}) {
+function elementBuilder({tag, attr, content, parent}) {
+
     const el = document.createElement(tag);
-    el.classList.add(classAttr);
+    if (attr !== undefined){
+    el.classList.add(attr);
+    }
     el.textContent = content
-    console.log(el)
     const parentEl = document.querySelector(`.${parent}`)
-    console.log(parentEl)
     parentEl.append(el)
   }
 
   pageContent.forEach(obj => elementBuilder(obj))
 }
-
-// function homePage () {
-//     const content = document.getElementById('content')
-//     const header = document.createElement('header')
-//     header.classList.add('header')
-//     content.append(header)
-
-//     const navLinks = document.createElement('div')
-//     navLinks.classList.add('navLinks')
-//     header.append(navLinks)
-
-//         const homeLink = document.createElement('div')
-//         homeLink.classList.add('home')
-//         homeLink.textContent = 'Home'
-
-//         const menuLink = document.createElement('div')
-//         menuLink.classList.add('menu')
-//         menuLink.textContent = 'Menu'
-
-//         const contactLink = document.createElement('div')
-//         contactLink.classList.add('contact')
-//         contactLink.textContent = 'Contact Us'
-
-//         navLinks.append(homeLink, menuLink, contactLink)
-
-//     const h1 = document.createElement('h1')
-//     h1. textContent = 'Paragliding'
-//     header.append(h1)
-
-//     const headerInfo = document.createElement('div')
-//     headerInfo.classList.add('headerInfo')
-//     header.append(headerInfo)
-
-//     const phone = document.createElement('p')
-//     phone.classList.add('headerPhone')
-//     phone.textContent = '555-123-4567'
-//     const address = document.createElement('p')
-//     address.classList.add('headerAddress')
-//     address.textContent = "123 45th St. Anchorage, AK"
-//     headerInfo.append(phone, address)
-
-//     const main = document.createElement('main')
-//     content.append(main)
-// }
 
 
 // const newElement = (el, att, cont) => {

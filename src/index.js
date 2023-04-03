@@ -1,6 +1,6 @@
 import {homePage} from "./home.js";
 import './style.css'
-import background from './assets/background.jpg'
+import background from './assets/images/homeBackground.jpg'
 
 homePage()
 
