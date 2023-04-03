@@ -202,6 +202,15 @@ h1 {
   font-size: 2.5rem;
   font-style: bold;
 }
+.headerInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.headerPhone,
+.headerAddress {
+  margin: 3px;
+}
 
 main {
   height: 100%;
