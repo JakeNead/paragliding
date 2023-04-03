@@ -176,6 +176,13 @@ template {
   font-style: bold;
 }
 
+@font-face {
+  font-family: "air-america";
+  src: url("./assets/fonts/AirAmerica-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   font-family: "barlow";
 }
@@ -187,8 +194,9 @@ template {
 header {
   display: flex;
   justify-content: space-evenly;
-  background-color: rgba(113, 113, 113, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
   position: absolute;
+  height: 4rem;
   width: 100%;
 }
 
@@ -199,13 +207,15 @@ header {
 }
 
 h1 {
-  font-size: 2.5rem;
-  font-style: bold;
+  font-family: "air-america";
+  font-size: 4.5rem;
+  letter-spacing: 5px;
 }
 .headerInfo {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: end;
 }
 .headerPhone,
 .headerAddress {
@@ -229,9 +239,12 @@ main {
   padding: 2.5rem;
   border-radius: 0.5rem;
   font-size: 2.5rem;
-  font-style: bold;
+  font-style: normal;
 }
 
-button {
-  padding: 0.5, 1rem;
+.contactButton {
+  padding: 1rem 2rem;
+  border-radius: 30rem;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.9);
 }
