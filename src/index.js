@@ -1,4 +1,6 @@
 import {homePage} from "./home.js";
+import {adventures} from "./adventures.js";
+import {contact} from "./contact.js";
 import './style.css'
 import background from './assets/images/homeBackground.jpg'
 
