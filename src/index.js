@@ -1,27 +1,39 @@
-import {homePage} from "./home.js";
-import {adventuresPage} from "./adventures.js";
-import {contactPage} from "./contact.js";
+import {homeContent} from "./home.js";
+import {adventuresContent} from "./adventures.js";
+import {contactContent} from "./contact.js";
 import './style.css'
 
-homePage()
-tabSwitch()
+renderPage(homeContent)
 
-function tabSwitch () {
+function renderPage (page) {
+    page.forEach(obj => elementBuilder(obj))
+    tabEvents()
+}
+
+function elementBuilder({tag, attr, content, parent}) {
+    const el = document.createElement(tag);
+    el.classList.add(attr);
+    el.textContent = content
+    const parentEl = document.querySelector(`.${parent}`)
+    parentEl.append(el)
+}
+
+function tabEvents () {
     const home = document.querySelector('.homeLink')
     const adventures = document.querySelector('.adventuresLink')
     const contact = document.querySelector('.contactLink')
 
     home.addEventListener('click', () => {
     clearPage()
-    homePage()
+    renderPage(homeContent)
     })
     adventures.addEventListener('click', () => {
     clearPage()
-    adventuresPage()
+    renderPage(adventuresContent)
     })
     contact.addEventListener('click', () => {
     clearPage()
-    contactPage()
+    renderPage(contactContent)
     })
 }
 

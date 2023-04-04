@@ -1,7 +1,6 @@
-export { homePage }
+export { homeContent }
 
-function homePage () {
-    const pageContent = [
+const homeContent = [
     {tag: 'header', attr: 'header', content: '', parent: 'content'},
     {tag: 'div', attr: 'navLinks', content: '', parent: 'header'},
     {tag: 'p', attr: 'homeLink', content: 'Home', parent: 'navLinks'},
@@ -14,18 +13,4 @@ function homePage () {
     {tag: 'h1', attr: 'h1Home', content: 'Paraglide Alaska', parent: 'main'},
     {tag: 'h2', attr: 'cta', content: 'Come see Fairbanks from a whole new perspective!', parent: 'main'},
     {tag: 'button', attr: 'contactButton', content: 'Book a flight!', parent: 'main'},
-    ]
-
-
-    function elementBuilder({tag, attr, content, parent}) {
-        const el = document.createElement(tag);
-        if (attr != undefined){
-        el.classList.add(attr);
-        }
-        el.textContent = content
-        const parentEl = document.querySelector(`.${parent}`)
-        parentEl.append(el)
-    }
-
-    pageContent.forEach(obj => elementBuilder(obj))
-}
+]
