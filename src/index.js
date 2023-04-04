@@ -4,9 +4,9 @@ import {contactPage} from "./contact.js";
 import './style.css'
 
 homePage()
-hyperlinks()
+tabSwitch()
 
-function hyperlinks () {
+function tabSwitch () {
     const home = document.querySelector('.homeLink')
     const adventures = document.querySelector('.adventuresLink')
     const contact = document.querySelector('.contactLink')

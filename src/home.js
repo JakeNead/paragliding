@@ -28,5 +28,4 @@ function homePage () {
     }
 
     pageContent.forEach(obj => elementBuilder(obj))
-
 }
