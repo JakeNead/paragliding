@@ -7,20 +7,21 @@ import background from './assets/images/homeBackground.jpg'
 homePage()
 
 
-// document.querySelector('.homeLink').addEventListener('click', () => {
-//     clearPage()
-//     homePage()
-// })
+function hyperlinks () {
+    const home = document.querySelector('.homeLink')
+    const adventures = document.querySelector('.adventuresLink')
+    const contact = document.querySelector('.contactLink')
 
-// document.querySelector('.menuLink').addEventListener('click', () => {
-//     clearPage()
-//     menuPage()
-// })
-
-// document.querySelector('.contactLink').addEventListener('click', () => {
-//     clearPage()
-//     contactPage()
-// })
+    home.addEventListener('click', () => 
+    clearPage(),
+    home())
+    adventures.addEventListener('click', () => 
+    clearPage(),
+    adventures())
+    contact.addEventListener('click', () =>
+    clearPage(),
+    contact())
+}
 
 
 // function clearPage(){
