@@ -207,6 +207,12 @@ header {
   align-items: center;
 }
 
+.homeLink:hover,
+.adventuresLink:hover,
+.contactLink:hover {
+  cursor: pointer;
+}
+
 .h1Home {
   font-family: "air-america";
   font-size: 4.5rem;

@@ -11,15 +11,18 @@ function hyperlinks () {
     const adventures = document.querySelector('.adventuresLink')
     const contact = document.querySelector('.contactLink')
 
-    home.addEventListener('click', () => 
-    clearPage(),
-    homePage())
-    adventures.addEventListener('click', () => 
-    clearPage(),
-    adventuresPage())
-    contact.addEventListener('click', () =>
-    clearPage(),
-    contactPage())
+    home.addEventListener('click', () => {
+    clearPage()
+    homePage()
+    })
+    adventures.addEventListener('click', () => {
+    clearPage()
+    adventuresPage()
+    })
+    contact.addEventListener('click', () => {
+    clearPage()
+    contactPage()
+    })
 }
 
 function clearPage(){

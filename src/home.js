@@ -28,5 +28,5 @@ function homePage () {
     }
 
     pageContent.forEach(obj => elementBuilder(obj))
-    console.log('test')
+
 }
