@@ -1,11 +1,10 @@
 import {homePage} from "./home.js";
-import {adventures} from "./adventures.js";
-import {contact} from "./contact.js";
+import {adventuresPage} from "./adventures.js";
+import {contactPage} from "./contact.js";
 import './style.css'
-import background from './assets/images/homeBackground.jpg'
 
 homePage()
-
+hyperlinks()
 
 function hyperlinks () {
     const home = document.querySelector('.homeLink')
@@ -14,24 +13,18 @@ function hyperlinks () {
 
     home.addEventListener('click', () => 
     clearPage(),
-    home())
+    homePage())
     adventures.addEventListener('click', () => 
     clearPage(),
-    adventures())
+    adventuresPage())
     contact.addEventListener('click', () =>
     clearPage(),
-    contact())
+    contactPage())
 }
 
-
-// function clearPage(){
-//     const content = document.querySelector('#content')
-//     while (content.firstChild) {
-//         document.removeChild(content.firstChild)
-//     }
-// }
-
-
-
-
-// paragliding site with home/adventures/contact us 
+function clearPage(){
+    const content = document.querySelector('.content')
+    while (content.firstChild) {
+        content.removeChild(content.firstChild)
+    }
+}

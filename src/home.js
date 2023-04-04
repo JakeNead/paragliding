@@ -15,11 +15,9 @@ function homePage () {
     {tag: 'h2', attr: 'cta', content: 'Come see Fairbanks from a whole new perspective!', parent: 'main'},
     {tag: 'button', attr: 'contactButton', content: 'Book a flight!', parent: 'main'},
     ]
-    // {tag: , attr: , content: , parent: },
 
 
-    function elementBuilder({tag, attr, href, content, parent}) {
-        console.log(attr)
+    function elementBuilder({tag, attr, content, parent}) {
         const el = document.createElement(tag);
         if (attr != undefined){
         el.classList.add(attr);
@@ -30,6 +28,5 @@ function homePage () {
     }
 
     pageContent.forEach(obj => elementBuilder(obj))
-
-    hyperlinks()
+    console.log('test')
 }
