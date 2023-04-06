@@ -10,5 +10,39 @@ const adventuresContent = [
     {tag: 'p', attr: 'headerPhone', content: '555-123-4567', parent:'headerInfo' },
     {tag: 'p', attr: 'headerAddress', content: '123 45th St. Anchorage, AK', parent:'headerInfo' },
     {tag: 'main', attr: 'main', content: '', parent: 'content'},
-
+    {tag: 'article', attr: 'article', content: '', parent: 'main'},
+    {tag: 'img', attr: '', content: '', parent: 'article'},
+    {tag: 'div', attr: 'textContainer', content: '', parent: 'article'},
+    {tag: 'h3', attr: 'articleTitle', content: 'something', parent: 'textContainer'},
+    {tag: 'p', attr: 'info', content: 'Something about this deal. What to expect and who would enjoy this adventure.', parent: 'textContainer'},
+    {tag: 'p', attr: 'price', content: '$280', parent: 'textContainer'},
+    {tag: 'article', attr: 'article', content: '', parent: 'main'},
+    {tag: 'img', attr: 'img1', content: '', parent: 'article'},
+    {tag: 'div', attr: 'textContainer', content: '', parent: 'article'},
+    {tag: 'h3', attr: 'articleTitle', content: 'something', parent: 'textContainer'},
+    {tag: 'p', attr: 'info', content: 'Something about this deal. What to expect and who would enjoy this adventure.', parent: 'textContainer'},
+    {tag: 'p', attr: 'price', content: '$280', parent: 'textContainer'},
+    {tag: 'article', attr: 'article', content: '', parent: 'main'},
+    {tag: 'img', attr: 'img1', content: '', parent: 'article'},
+    {tag: 'div', attr: 'textContainer', content: '', parent: 'article'},
+    {tag: 'h3', attr: 'articleTitle', content: 'something', parent: 'textContainer'},
+    {tag: 'p', attr: 'info', content: 'Something about this deal. What to expect and who would enjoy this adventure.', parent: 'textContainer'},
+    {tag: 'p', attr: 'price', content: '$280', parent: 'textContainer'},
+    {tag: 'article', attr: 'article', content: '', parent: 'main'},
+    {tag: 'img', attr: 'img1', content: '', parent: 'article'},
+    {tag: 'div', attr: 'textContainer', content: '', parent: 'article'},
+    {tag: 'h3', attr: 'articleTitle', content: 'something', parent: 'textContainer'},
+    {tag: 'p', attr: 'info', content: 'Something about this deal. What to expect and who would enjoy this adventure.', parent: 'textContainer'},
+    {tag: 'p', attr: 'price', content: '$280', parent: 'textContainer'},
 ]
+// {tag: , attr: , content: , parent: }
+
+// article
+//               text container
+//   picture     title
+//   picture     info
+//   picture     price
+//   picture     button
+
+
+//
