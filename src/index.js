@@ -1,7 +1,9 @@
 import {homeContent} from "./home.js";
 import {adventuresContent} from "./adventures.js";
 import {contactContent} from "./contact.js";
-import './style.css'
+import './home-style.css'
+import './adventures-style.css'
+import './contact-style.css'
 
 renderPage(homeContent)
 
@@ -12,8 +14,12 @@ function renderPage (page) {
 
 function elementBuilder({tag, attr, content, parent}) {
     const el = document.createElement(tag);
-    el.classList.add(attr);
-    el.textContent = content
+    if (attr !== ''){
+        el.classList.add(attr)
+    }
+    if (content !== ''){
+        el.textContent = content
+    }
     const parentEl = document.querySelector(`.${parent}`)
     parentEl.append(el)
 }
@@ -27,10 +33,12 @@ function tabEvents () {
     clearPage()
     renderPage(homeContent)
     })
+
     adventures.addEventListener('click', () => {
     clearPage()
     renderPage(adventuresContent)
     })
+    
     contact.addEventListener('click', () => {
     clearPage()
     renderPage(contactContent)
