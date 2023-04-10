@@ -5,7 +5,7 @@ import './home-style.css'
 import './adventures-style.css'
 import './contact-style.css'
 
-renderPage(homeContent)
+renderPage(adventuresContent)
 
 function renderPage (page) {
     page.forEach(obj => elementBuilder(obj))

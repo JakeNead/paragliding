@@ -10,7 +10,8 @@ const homeContent = [
     {tag: 'p', attr: 'headerPhone', content: '555-123-4567', parent:'headerInfo' },
     {tag: 'p', attr: 'headerAddress', content: '123 45th St. Anchorage, AK', parent:'headerInfo' },
     {tag: 'main', attr: 'main', content: '', parent: 'content'},
-    {tag: 'h1', attr: 'h1Home', content: 'Paraglide Alaska', parent: 'main'},
-    {tag: 'h2', attr: 'cta', content: 'Come see Fairbanks from a whole new perspective!', parent: 'main'},
-    {tag: 'button', attr: 'contactButton', content: 'Book a flight!', parent: 'main'},
+    {tag: 'div', attr: 'homeMain', content: '', parent: 'main'},
+    {tag: 'h1', attr: 'h1Home', content: 'Paraglide Alaska', parent: 'homeMain'},
+    {tag: 'h2', attr: 'cta', content: 'Come see Fairbanks from a whole new perspective!', parent: 'homeMain'},
+    {tag: 'button', attr: 'contactButton', content: 'Book a flight!', parent: 'homeMain'},
 ]
