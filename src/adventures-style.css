@@ -1,13 +1,15 @@
 .adventuresMain {
   width: 800px;
+  margin: 0 3rem;
+  height: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  place-content: center;
+  gap: 1rem;
 }
 
 article {
   border: 1px solid black;
-}
-
-main {
-  /* background: rgb(60, 120, 180); */
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
 }
