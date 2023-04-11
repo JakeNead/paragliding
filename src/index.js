@@ -5,7 +5,7 @@ import './home-style.css'
 import './adventures-style.css'
 import './contact-style.css'
 
-renderPage(adventuresContent)
+renderPage(contactContent)
 
 function renderPage (page) {
     page.forEach(obj => elementBuilder(obj))
@@ -15,15 +15,14 @@ function renderPage (page) {
 function elementBuilder({tag, attr, content, parent}) {
     const el = document.createElement(tag);
     if (attr !== ''){
-        for (const key in attr){
+        for (let key in attr){
             el.setAttribute(key, attr[key])
         }
-        // el.classList.add(attr)
     }
     if (content !== ''){
         el.textContent = content
     }
-    const parentEl = document.querySelector(`.${parent}`)
+    const parentEl = document.querySelector(`${parent}`)
     parentEl.append(el)
 }
 
