@@ -15,7 +15,10 @@ function renderPage (page) {
 function elementBuilder({tag, attr, content, parent}) {
     const el = document.createElement(tag);
     if (attr !== ''){
-        el.classList.add(attr)
+        for (const key in attr){
+            el.setAttribute(key, attr[key])
+        }
+        // el.classList.add(attr)
     }
     if (content !== ''){
         el.textContent = content
