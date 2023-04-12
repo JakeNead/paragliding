@@ -12,13 +12,19 @@ const contactContent = [
     {tag: 'main', attr: {class:'main'}, content: '', parent: '.content'},
 
     {tag: 'div', attr: {class:'formContainer'}, content: '', parent: '.main'},
-    {tag: 'form', content: '', parent:  '.formContainer'},
+    {tag: 'h2', attr: {id:'h2Contact'}, content: 'Contact Us', parent: '.formContainer'},
+    {tag: 'p', attr: {id:'contactMessage'}, content: 'Leave us a message and we\'ll get back to you as soon as we can.', parent: '.formContainer'},
+    {tag: 'form', attr:{action:'#', method:'post', onsubmit:'event.preventDefault()'},mcontent: '', parent:  '.formContainer'},
 
     {tag: 'label', attr: {for:'full-name'}, content: 'Full Name', parent: 'form'},
     {tag: 'input', attr: {type:'text', id:'full-name', name:'full-name', required: 'required'}, content: '', parent: 'form'},
 
     {tag: 'label', attr: {for:'email'} , content: 'Email', parent: 'form'},
     {tag: 'input', attr: {type: 'text', id:'email', name:'email', required: ''}, content: '', parent: 'form'}, 
+
+    {tag: 'label', attr: {for:'text'} , content: 'Please leave a detailed message', parent: 'form'},
+    {tag: 'textarea', attr: {type: 'text', id:'text', name:'text', required: ''}, content: '', parent: 'form'}, 
+    {tag: 'button', attr: {type: 'submit'}, content: 'Submit', parent: 'form'},
     // {tag: , attr: , content: , parent: },
 ]
 
