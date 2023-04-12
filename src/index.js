@@ -5,7 +5,7 @@ import './home-style.css'
 import './adventures-style.css'
 import './contact-style.css'
 
-renderPage(contactContent)
+renderPage(homeContent)
 
 function renderPage (page) {
     page.forEach(obj => elementBuilder(obj))
@@ -23,6 +23,7 @@ function elementBuilder({tag, attr, content, parent}) {
         el.textContent = content
     }
     const parentEl = document.querySelector(`${parent}`)
+    console.log
     parentEl.append(el)
 }
 
