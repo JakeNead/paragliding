@@ -13,5 +13,5 @@ const homeContent = [
     {tag: 'div', attr: {class:'homeMain'}, content: '', parent: '.main'},
     {tag: 'h1', attr: {class:'h1Home'}, content: 'Paraglide Alaska', parent: '.homeMain'},
     {tag: 'h2', attr: {class:'cta'}, content: 'Come see Fairbanks from a whole new perspective!', parent: '.homeMain'},
-    {tag: 'button', attr: {class:'contactButton'}, content: 'Book a flight!', parent: '.homeMain'},
+    {tag: 'button', attr: {type: 'button', class:'contactButton'}, content: 'Book a flight!', parent: '.homeMain'},
 ]

@@ -23,7 +23,6 @@ function elementBuilder({tag, attr, content, parent}) {
         el.textContent = content
     }
     const parentEl = document.querySelector(`${parent}`)
-    console.log
     parentEl.append(el)
 }
 
@@ -31,21 +30,29 @@ function tabEvents () {
     const home = document.querySelector('.homeLink')
     const adventures = document.querySelector('.adventuresLink')
     const contact = document.querySelector('.contactLink')
+    const bookAFlight = document.querySelector('.contactButton')
 
     home.addEventListener('click', () => {
-    clearPage()
-    renderPage(homeContent)
+        clearPage()
+        renderPage(homeContent)
     })
 
     adventures.addEventListener('click', () => {
-    clearPage()
-    renderPage(adventuresContent)
+        clearPage()
+        renderPage(adventuresContent)
     })
     
     contact.addEventListener('click', () => {
-    clearPage()
-    renderPage(contactContent)
+        clearPage()
+        renderPage(contactContent)
     })
+
+    if (bookAFlight !== null) {
+        bookAFlight.addEventListener('click', () => {
+            clearPage()
+            renderPage(contactContent)
+        })
+    }
 }
 
 function clearPage(){
