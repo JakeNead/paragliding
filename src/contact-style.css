@@ -1,0 +1,33 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formContainer {
+  background: rgb(248, 248, 248);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+label::before {
+  content: "*";
+  color: red;
+  position: relative;
+  right: 1px;
+}
+
+#h2Contact {
+  margin-top: 0;
+}
+
+textarea {
+  padding: 0.5rem;
+  resize: none;
+  height: 200px;
+}
+
+button[type="submit"] {
+  margin-top: 0.5rem;
+  width: fit-content;
+  text-align: center;
+}
